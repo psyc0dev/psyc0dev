@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>psyc0dev Portfolio</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <ul class="navbar-list">
+        <li class="navbar-item">
+          <a href="#about" class="navbar-link active">About</a>
+        </li>
+        <li class="navbar-item">
+          <a href="#skills" class="navbar-link">Skills</a>
+        </li>
+        <li class="navbar-item">
+          <a href="#projects" class="navbar-link">Projects</a>
+        </li>
+        <li class="navbar-item">
+          <a href="#contact" class="navbar-link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- PROFILE -->
+    <aside class="sidebar">
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.jpg" alt="psyc0dev" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name">psyc0dev</h1>
+          <div class="title-container">
+            <p class="title"><span class="changing-title">Genius</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-container">
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:psyc0dev.main@gmail.com" class="contact-link">psyc0dev.main@gmail.com</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="logo-github"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">GitHub</p>
+              <a href="https://github.com/" class="contact-link">github.com/psyc0dev</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>who knows xD</address>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+      <!-- ABOUT -->
+      <article class="about" id="about">
+        <header>
+          <h2 class="article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm psyc0dev
+          </p>
+        </section>
+
+        <!-- SERVICES -->
+        <section class="service">
+          <h3 class="service-title">What I do</h3>
+
+          <ul class="service-list">
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/web-svgrepo-com.svg" alt="Web development icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="service-item-title">Web Development</h4>
+                <p class="service-item-text">
+                  Modern and responsive websites using the latest technologies.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/telegram-svgrepo-com.svg" alt="telegram icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="service-item-title">Telegram Bots</h4>
+                <p class="service-item-text">
+                  Innovative and multifunctional telegram bots for all needs.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </article>
+
+      <!-- SKILLS -->
+      <article class="skills" id="skills">
+        <header>
+          <h2 class="article-title">Skills</h2>
+        </header>
+
+        <section class="skill">
+          <ul class="skills-list content-card">
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Python</h5>
+                <data value="90">75%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Java</h5>
+                <data value="85">50%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">React</h5>
+                <data value="75">35%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 35%;"></div>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </article>
+
+      <!-- PROJECTS -->
+      <article class="portfolio" id="projects">
+        <header>
+          <h2 class="article-title">Projects</h2>
+        </header>
+
+        <section class="projects">
+          <ul class="project-list">
+            <li class="project-item active">
+              <a href="https://psyc0dev.github.io/gokids">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/blog-2.jpg" alt="gokids" loading="lazy">
+                </figure>
+                <h3 class="project-title">GoKids Landing Page</h3>
+                <p class="project-category">Web Development</p>
+              </a>
+            </li>
+
+            <li class="project-item active">
+              <a href="https://t.me/extra_shopbot?start">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-9.png" alt="extrashop" loading="lazy">
+                </figure>
+                <h3 class="project-title">Extra Shop</h3>
+                <p class="project-category">Telegram Bot</p>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </article>
+
+      <!-- CONTACT -->
+      <article class="contact" id="contact">
+        <header>
+          <h2 class="article-title">Contact</h2>
+        </header>
+
+        <section class="contact-form">
+          <h3 class="form-title">Get In Touch</h3>
+
+          <form action="#" class="form" data-form>
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+          </form>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <!-- SCRIPTS -->
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/title-changer.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const form = document.querySelector('[data-form]');
+      const inputs = form.querySelectorAll('[data-form-input]');
+      const submitBtn = form.querySelector('[data-form-btn]');
+
+      const BOT_TOKEN = '7843339243:AAFQD-1o-ibmbTtTm7RM1lmQVEVusch-QIk';
+      const CHAT_ID = '1022239785';
+
+      form.addEventListener('input', () => {
+        const allFilled = Array.from(inputs).every(input => input.value.trim() !== '');
+        submitBtn.disabled = !allFilled;
+      });
+
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        const name = form.fullname.value.trim();
+        const email = form.email.value.trim();
+        const message = form.message.value.trim();
+
+        const text = `📥 *New Contact Message*\n\n👤 *Name:* ${name}\n📧 *Email:* ${email}\n💬 *Message:* ${message}`;
+        const url = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
+
+        try {
+          const response = await fetch(url, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              chat_id: CHAT_ID,
+              text: text,
+              parse_mode: 'Markdown'
+            })
+          });
+
+          if (response.ok) {
+            form.reset();
+            submitBtn.disabled = true;
+          } else {
+            const result = await response.json();
+          }
+        } catch (error) {
+          console.error(error);
+        }
+      });
+    });
+  </script>
+
+
+</body>
+
+</html>
