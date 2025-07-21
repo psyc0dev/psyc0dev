@@ -24,10 +24,7 @@
           <a href="#skills" class="navbar-link">Skills</a>
         </li>
         <li class="navbar-item">
-          <a href="#projects" class="navbar-link">Projects</a>
-        </li>
-        <li class="navbar-item">
-          <a href="#contact" class="navbar-link">Contact</a>
+          <a href="#contact" class="navbar-link">Projects/Contact</a>
         </li>
       </ul>
     </nav>
@@ -228,6 +225,7 @@
               <span>Send Message</span>
             </button>
           </form>
+          
         </section>
       </article>
     </div>
@@ -238,53 +236,6 @@
   <script src="./assets/js/title-changer.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const form = document.querySelector('[data-form]');
-      const inputs = form.querySelectorAll('[data-form-input]');
-      const submitBtn = form.querySelector('[data-form-btn]');
-
-      const BOT_TOKEN = '7843339243:AAFQD-1o-ibmbTtTm7RM1lmQVEVusch-QIk';
-      const CHAT_ID = '1022239785';
-
-      form.addEventListener('input', () => {
-        const allFilled = Array.from(inputs).every(input => input.value.trim() !== '');
-        submitBtn.disabled = !allFilled;
-      });
-
-      form.addEventListener('submit', async (e) => {
-        e.preventDefault();
-
-        const name = form.fullname.value.trim();
-        const email = form.email.value.trim();
-        const message = form.message.value.trim();
-
-        const text = `📥 *New Contact Message*\n\n👤 *Name:* ${name}\n📧 *Email:* ${email}\n💬 *Message:* ${message}`;
-        const url = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
-
-        try {
-          const response = await fetch(url, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-              chat_id: CHAT_ID,
-              text: text,
-              parse_mode: 'Markdown'
-            })
-          });
-
-          if (response.ok) {
-            form.reset();
-            submitBtn.disabled = true;
-          } else {
-            const result = await response.json();
-          }
-        } catch (error) {
-          console.error(error);
-        }
-      });
-    });
-  </script>
 
 
 </body>
